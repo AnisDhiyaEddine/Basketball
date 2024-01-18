@@ -5,6 +5,8 @@ using UnityEngine;
 public class DisplayMenu : MonoBehaviour
 {
     public GameObject menuCanvas;
+    public bool playing = true;
+
     public void ToggleMenu()
     {
         if (menuCanvas != null)

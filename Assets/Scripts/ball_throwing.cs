@@ -17,7 +17,6 @@ public class ball_throwing : MonoBehaviour
 
     public void grabbed()
     {
-        
         isGrabbed = true;
         StartCoroutine(UpdatePower());
         rayInteractor.lineType = XRRayInteractor.LineType.ProjectileCurve;
@@ -67,10 +66,4 @@ public class ball_throwing : MonoBehaviour
 
         yield return null;
     }
-
-    private void Update()
-    {
-        DebugConsole.instance.log("test");
-    }
-
 }
